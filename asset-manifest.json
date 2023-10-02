@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/FitnessWeb/static/css/main.b7343096.css",
+    "main.js": "/FitnessWeb/static/js/main.dfa61970.js",
+    "static/media/banner.png": "/FitnessWeb/static/media/banner.5209b5e92a864ca0c615.png",
+    "index.html": "/FitnessWeb/index.html",
+    "main.b7343096.css.map": "/FitnessWeb/static/css/main.b7343096.css.map",
+    "main.dfa61970.js.map": "/FitnessWeb/static/js/main.dfa61970.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7343096.css",
+    "static/js/main.dfa61970.js"
+  ]
+}
