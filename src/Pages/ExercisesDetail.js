@@ -6,7 +6,7 @@ import Detail from "../Components/Detail";
 import Similar from "../Components/Similar";
 import Spinner from "../Components/Loader";
 // import Youtube from "../Components/Youtube";
-// import youtubeoptions from "../utils/fetchData";
+import {youtubeoptions} from "../utils/fetchData";
 const ExercisesDetail = () => {
   const [exercisesbyid, setExercisesbyid] = useState({});
   // const [youtube, setYoutube] = useState([]);
@@ -17,7 +17,7 @@ const ExercisesDetail = () => {
   useEffect(() => {
     const exercisedetail = async () => {
       const exercisebyidurl = `https://exercisedb.p.rapidapi.com/exercises`;
-      // const youtubeurl = "https://youtube-search-and-download.p.rapidapi.com";
+      const youtubeurl = "https://youtube-search-and-download.p.rapidapi.com";
       const fetchdata = await fetchData(
         `${exercisebyidurl}/exercise/${id}`,
         Exercisesoptions
@@ -26,11 +26,11 @@ const ExercisesDetail = () => {
       setExercisesbyid(fetchdata);
       // console.log(exercisesbyid, typeof exercisesbyid, "state");
 
-      // const youtubevideos = await fetchData(
-      //   `${youtubeurl}/search?query=${fetchdata.name} exercise`,
-      //   youtubeoptions
-      // );
-      // console.log(youtubevideos);
+      const youtubevideos = await fetchData(
+        `${youtubeurl}/search?query=${fetchdata.name} exercise`,
+        youtubeoptions
+      );
+      console.log(youtubevideos,"videos");
       // setYoutube(youtubevideos);
 
       const exercisebytarget = await fetchData(

@@ -34,7 +34,7 @@ const Bodypart1 = (props) => {
     window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
   };
   return (
-    <div className="item" onClick={handlesearch}>
+    <div className="bodypart" onClick={handlesearch}>
       {item}
     </div>
   );

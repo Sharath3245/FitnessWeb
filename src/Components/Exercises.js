@@ -5,11 +5,11 @@ import Spinner from "./Loader";
 const Exercises = () => {
   const bodyparts = useSelector((state) => state.bodyparts.searchedexercises);
   return (
-    <Box>
+    <Box style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
       {bodyparts.length > 0 ? (
         <Paginations data={bodyparts} perpage={9} typo={"Showing results"} />
       ) : (
-        <div className="spinner">
+        <div className="spinner1">
           {" "}
           <Spinner />
         </div>

@@ -1,6 +1,8 @@
 import Paginations from "./Paginations";
 import Spinner from "./Loader";
 import { Box } from "@mui/material";
+import Lottie from "lottie-react";
+import GymLoader from '../Assets/GymLoader.json'
 const Similar = ({ target, equipment }) => {
   console.log(target, equipment, "simailar exercises");
   return (

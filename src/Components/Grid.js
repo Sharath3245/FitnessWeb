@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import Bodypart1 from "./Bodypart1";
-import Bodypart2 from "./Bodypart2";
 import Spinner from "./Loader";
 const Grid = () => {
   const bodyparts = useSelector((state) => state.bodyparts.bodyparts);
@@ -20,12 +19,12 @@ const Grid = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="bodypartcontainer">
       {bodyparts.length > 0 ? (
         bodyparts.map((item, index) => (
-          <div className="container" key={index}>
+          
             <Bodypart1 item={item} />
-          </div>
+          
         ))
       ) : (
         <div className="spinner">

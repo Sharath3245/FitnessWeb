@@ -157,6 +157,30 @@ body {
 .spinner {
   align-items: center;
   justify-content: center;
-  margin-left: 550px;
-  margin-top: 15px;
+  display: flex;
+  width: 10rem;
+  height:10rem
+}
+.bodypart{
+padding:5px;
+border-radius: 7px;
+background-color: #c7e1ff80;
+text-transform: capitalize;
+text-align: center;
+cursor:pointer;
+min-width: 10px;
+width: fit-content;
+font-size: 24px;
+}
+.bodypartcontainer{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.spinner1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
 }
